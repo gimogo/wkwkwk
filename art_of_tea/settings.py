@@ -2,6 +2,7 @@
 
 import os
 import dj_database_url
+import django_heroku
 if os.path.exists("env.py"):
     import env
 
