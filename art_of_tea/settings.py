@@ -19,7 +19,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'cg#p$g+j9tax!#a3cup@1$8obt2_+&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://jualcasedibandung.herokuapp.com']
 
 
 # Application definition
@@ -236,3 +236,5 @@ else:
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
 
 GOOGLE_MAP_API_KEY = os.environ.get('GOOGLE_MAP_KEY')
+
+django_heroku.settings(locals())
